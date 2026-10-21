@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "version": "20.3-final",
+    "horizons": [
+      5,
+      20,
+      60
+    ],
+    "primary_horizon": 60,
+    "minimum_annual_high_bars": 252,
+    "minimum_download_coverage": 0.92,
+    "same_pool_definition": "DATE_T_ELIGIBLE_WITH_OBSERVED_CORE_FACTORS_NO_SCORE_FLOOR",
+    "core_weights": {
+      "p197_liquidity": 0.8,
+      "p197_annual_high": 0.2
+    },
+    "confirm_weights": {
+      "p202_rel20": 0.4,
+      "p197_downside": 0.3,
+      "p197_trend_eff": 0.3
+    },
+    "timing_weights": {
+      "p202_rel5": 0.35,
+      "p202_volume_impulse": 0.3,
+      "p202_entry_quality": 0.35
+    },
+    "core_floor": 55.0,
+    "confirm_floor": 50.0,
+    "timing_floor": 55.0,
+    "rsi_overheat": 82.0,
+    "bias_overheat_pct": 12.0,
+    "top_k": 5,
+    "wave_plan": [
+      {
+        "key": "C1",
+        "stocks": 150,
+        "dates": 48,
+        "seed": 316227,
+        "universe_seed": 282843
+      },
+      {
+        "key": "C2",
+        "stocks": 150,
+        "dates": 48,
+        "seed": 331777,
+        "universe_seed": 324161
+      }
+    ],
+    "partial_selection": "EMPTY_SLOTS_REMAIN_CASH_NO_BACKFILL",
+    "unknown_market": "NO_ALLOCATION_EVIDENCE",
+    "future_missing_exit": "KEEP_SELECTED_STOCK_AND_MARK_OUTCOME_UNKNOWN",
+    "basis": "ADJUSTED_PROVIDER_OR_INTENTIONAL_CASH",
+    "minimum_matched_cases_per_wave": 24,
+    "minimum_matched_fraction": 0.9,
+    "minimum_participation": 0.5,
+    "minimum_quarter_blocks": 6,
+    "minimum_global_disjoint_cases": 6,
+    "minimum_mean_excess": 0.002,
+    "minimum_policy_absolute_mean": 0.0,
+    "additional_active_round_trip_stress": 0.005,
+    "interval": "PAIRED_95_PERCENT_IID_AND_WEIGHTED_QUARTER_BLOCK",
+    "nonoverlap": "GLOBAL_C1_C2_CALENDAR_BEFORE_OUTCOME_FILTERING",
+    "historical_inference": "EXPOSED_ERA_CURRENT_ROSTER_RESEARCH_NOT_FUTURE_HOLDOUT",
+    "unsupported_claims": [
+      "GLOBAL_OPTIMUM",
+      "FULL_MARKET_COVERAGE",
+      "40_120_DAY_VALIDATION",
+      "LIMIT_UP_PREDICTION",
+      "INTRADAY_EXECUTION_ACCEPTANCE",
+      "FUTURE_PROFIT"
+    ],
+    "automatic_weight_adoption": false,
+    "automatic_orders_authorized": false
+  },
+  "protocol_hash": "7b76dac3aa5f77c135157d9a929330c7705b7133deef06b3d6aad0bb30d0cf69",
+  "source_code_hash": "1baab1b7742dfbef22aa286a37f51a738132a32f0bb3b16d74f3f369b4027d9b",
+  "registered_at": "ASSIGNED_BY_APP_AT_CAMPAIGN_START",
+  "state": "SPECIFICATION_NOT_PERFORMANCE_EVIDENCE"
+}
